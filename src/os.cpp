@@ -33,7 +33,7 @@ namespace lml_pae
 		return result;
 #elif defined(LML_PAE_MACOS) || defined(LML_PAE_LINUX)
 		struct utsname un;
-		uname(&un);
+		if (uname(&un)) throw LML_PAE_ERRORCODE_FAILED_TO_GET_OS_INFO;
 
 		std::ostringstream oss;
 		oss << un.nodename << '(' << un.sysname << ") " << un.version;
