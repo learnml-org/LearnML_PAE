@@ -8,9 +8,9 @@ namespace lml_pae
 #	if		defined(_WIN32) || defined(_WIN64) || defined(__WIN32__) || defined(__TOS_WIN__) || defined(__WINDOWS__)
 #				define LML_PAE_WINDOWS
 #	elif	defined(macintosh) || defined(Macintosh) || (defined(__APPLE__ ) && defined(__MACH__))
-#				defined LML_PAE_MACOS
+#				define LML_PAE_MACOS
 #	elif	defined(__gnu_linux__)
-#				defined LML_PAE_LINUX
+#				define LML_PAE_LINUX
 #	else
 #				error Not supported
 #	endif
