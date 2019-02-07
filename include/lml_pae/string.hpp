@@ -22,4 +22,7 @@ namespace lml_pae
 #endif
 
 	using string = std::basic_string<character>;
+
+	std::string to_utf8(const string& sys_enc);
+	string from_utf8(const std::string& utf8);
 }

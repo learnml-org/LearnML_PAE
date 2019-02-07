@@ -8,8 +8,6 @@
 
 #if	defined(LML_PAE_WINDOWS)
 #	include <Windows.h>
-#elif defined(LML_PAE_MACOS) || defined(LML_PAE_LINUX)
-#	include <sys/utsname.h>
 #endif
 
 namespace lml_pae

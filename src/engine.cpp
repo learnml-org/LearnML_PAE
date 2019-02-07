@@ -8,8 +8,6 @@
 #	include <ShlObj.h>
 #	include <Shlwapi.h>
 #	include <Windows.h>
-#elif defined(LML_PAE_MACOS) || defined(LML_PAE_LINUX)
-#	include <sys/utsname.h>
 #endif
 
 namespace lml_pae
