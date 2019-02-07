@@ -2,6 +2,8 @@
 
 #include <lml_pae/os.hpp>
 
+#include <string>
+
 namespace lml_pae
 {
 #ifdef LML_PAE_WINDOWS
@@ -18,4 +20,6 @@ namespace lml_pae
 	using character = char;
 #	define STR(string) string
 #endif
+
+	using string = std::basic_string<character>;
 }
